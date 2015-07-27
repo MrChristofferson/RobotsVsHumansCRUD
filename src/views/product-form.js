@@ -2,16 +2,15 @@ var $ = require('jquery');
 var Backbone = require('backbone');
 var formTemplate = require('../templates/product-form.hbs');
 
-
 /****************************************
   App
 *****************************************/
 
 var App = require('../app');
-var Product = require('../models/products');
+var Product = require('../models/product');
 
 /****************************************
-  View: User Form
+  View: Product Form
 *****************************************/
 
 var ProductFormView = Backbone.View.extend({
@@ -49,7 +48,7 @@ var ProductFormView = Backbone.View.extend({
       hobby: $('form.product input[name="hobby"]').val()
     };
 
-    // Add Mode (Create User)
+    // Add Mode (Create Products)
     if (!this.editMode) {
 
       // Only set the image on add mode
@@ -61,7 +60,7 @@ var ProductFormView = Backbone.View.extend({
         }
       });
 
-    // Edit Mode (Update User)
+    // Edit Mode (Update Products)
     } else {
       this.product.set(formData);
       this.product.save().done(function () {

@@ -18,7 +18,7 @@ var ListUsersView = require('./views/list-users');
 App.Views.ListUsers  = new ListUsersView;
 
 // View: List Products
-var ListProductsView = require('./views/list-products.js');
+var ListProductsView = require('./views/list-products');
 App.Views.ListProducts = new ListProductsView;
 
 // App Router
@@ -30,9 +30,9 @@ App.Router = Backbone.Router.extend({
     'user/add(/)': 'addUser',
     'user/:id/edit(/)': 'addUser',
     'user/:id/delete(/)': 'deleteUser',
-    'products(/)': 'products',
+    'products(/)': 'product',
     'products/add(/)': 'addProduct',
-    'prodcuts/:id/edit(/)': 'addProduct',
+    'products/:id/edit(/)': 'addProduct',
     'products/:id/delete(/)': 'deleteProduct', 
     '*actions': 'defaultRoute'
   },
@@ -43,7 +43,7 @@ App.Router = Backbone.Router.extend({
     App.Views.ListUsers.render();
   },
 
-  products: function() {
+  product: function() {
     App.Views.ListProducts.render();
   },
 
@@ -70,7 +70,6 @@ App.Router = Backbone.Router.extend({
       App.router.navigate('/products', { trigger: true })
     });
   },
-
 
   defaultRoute: function(actions) {
     console.log('404');

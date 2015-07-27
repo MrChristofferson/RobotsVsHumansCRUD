@@ -6,12 +6,12 @@ var listUsersTemplate = require('../templates/list-products.hbs');
 
 var App = require('../app');
 
-// =========================================================================
+//=========================================================================
 
 var ListProducts = Backbone.View.extend({  // FIRST
   el: $('main'),
 
-  collection: App.Collections.products,
+  collection: App.Collections.product,
 
   render: function () {
     var _this = this;
@@ -25,3 +25,6 @@ var ListProducts = Backbone.View.extend({  // FIRST
 }); // FIRST END
 
 module.exports = ListProducts;
+
+
+

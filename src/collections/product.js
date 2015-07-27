@@ -6,7 +6,7 @@ var Backbone = require('backbone');
 *****************************************/
 
 var App = require('../app');
-var Product = require('../models/products');
+var Product = require('../models/product');
 
 /****************************************
   Collection: User
@@ -17,6 +17,6 @@ var ProductCollection = Backbone.Collection.extend({
   model: Product
 });
 
-App.Collections.products = new ProductCollection;
+App.Collections.product = new ProductCollection;
 
-module.exports = App.Collections.products;
+module.exports = App.Collections.product;
