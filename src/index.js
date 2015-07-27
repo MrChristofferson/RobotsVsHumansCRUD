@@ -3,14 +3,21 @@ var Backbone = require('backbone');
 // App
 var App = require('./app');
 var userCollection = require('./collections/user');
+var productCollection = require('./collections/product')
 
 // View: User Form
 var UserFormView = require('./views/user-form');
 App.Views.UserForm = new UserFormView;
 
+var ProductFormView = require('./views/product-form');
+App.Views.ProductForm = new ProductFormView;
+
 // View: List Users
 var ListUsersView = require('./views/list-users');
 App.Views.ListUsers  = new ListUsersView;
+
+var ListProductsView = require('./views/list-products.js');
+App.Views.ListProducts = new ListProductsView;
 
 // App Router
 App.Router = Backbone.Router.extend({
@@ -21,6 +28,10 @@ App.Router = Backbone.Router.extend({
     'user/add(/)': 'addUser',
     'user/:id/edit(/)': 'addUser',
     'user/:id/delete(/)': 'deleteUser',
+    'products(/)': 'products',
+    'products/add(/)': 'addProduct',
+    'prodcuts/:id/edit(/)': 'addProduct',
+    'products/:id/delete(/)': 'deleteProduct', 
     '*actions': 'defaultRoute'
   },
 
@@ -30,8 +41,16 @@ App.Router = Backbone.Router.extend({
     App.Views.ListUsers.render();
   },
 
+  products: function() {
+    App.Views.ListProducts.render();
+  },
+
   addUser: function(id) {
     App.Views.UserForm.render(id);
+  },
+
+  addProduct: function(id) {
+    App.Views.ProductForm.render(id);
   },
 
   deleteUser: function(id) {
@@ -41,6 +60,15 @@ App.Router = Backbone.Router.extend({
       App.router.navigate('/', { trigger: true })
     });
   },
+
+   deleteProduct: function(id) {
+    var product = productCollection.get(id);
+
+    product.destroy().done(function (product) {
+      App.router.navigate('/products', { trigger: true })
+    });
+  },
+
 
   defaultRoute: function(actions) {
     console.log('404');

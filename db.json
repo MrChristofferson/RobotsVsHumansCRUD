@@ -1,16 +1,24 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Brad",
-      "hobby": "CSS",
-      "img": "http://robohash.org/14ebc73da14.png"
+      "name": "Clayton Songster",
+      "hobby": "Does Navy Stuff",
+      "img": "http://robohash.org/14ecc0508cc.png",
+      "id": 5
+    }
+  ],
+  "products": [
+    {
+      "name": "Wrench",
+      "hobby": "Wrenching",
+      "img": "http://robohash.org/14ecc2f0c14.png",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Kevin",
-      "hobby": "Beard Growing",
-      "img": "http://robohash.org/14eb93afa4d.png"
+      "name": "Screwdriver",
+      "hobby": "Screwdrivering",
+      "img": "http://robohash.org/14ecc2f5a6a.png",
+      "id": 2
     }
   ]
 }

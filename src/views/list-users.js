@@ -6,7 +6,7 @@ var listUsersTemplate = require('../templates/list-users.hbs');
 
 var App = require('../app');
 
-// View: List Users
+//====================================================
 
 var ListUsers = Backbone.View.extend({
   el: $('main'),
