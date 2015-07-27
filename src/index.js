@@ -9,6 +9,7 @@ var productCollection = require('./collections/product')
 var UserFormView = require('./views/user-form');
 App.Views.UserForm = new UserFormView;
 
+// View: Product Form
 var ProductFormView = require('./views/product-form');
 App.Views.ProductForm = new ProductFormView;
 
@@ -16,6 +17,7 @@ App.Views.ProductForm = new ProductFormView;
 var ListUsersView = require('./views/list-users');
 App.Views.ListUsers  = new ListUsersView;
 
+// View: List Products
 var ListProductsView = require('./views/list-products.js');
 App.Views.ListProducts = new ListProductsView;
 
