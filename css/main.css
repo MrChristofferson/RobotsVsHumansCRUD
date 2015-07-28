@@ -26,7 +26,12 @@ nav a {
     padding: 20px;
     text-decoration: none;
     color: white;
-    
+}    
+
+img {
+  border-bottom: 5px solid rgba(255,255,255, 0.3);
+  border-radius: 20;
+
 }
 
 .hobby, .name, .anchors {
@@ -42,9 +47,7 @@ nav a {
   position: relative;
   color: #fff;
   background-color: transparent;
-  /*padding: 10px;*/
   width:24%;
-  /*margin-bottom:10px;*/
   display:inline-block;
   * display:inline;
   margin: 0px 3px 10px 3px;
@@ -68,7 +71,7 @@ nav a {
   display:block;
   border-top: 0 #fff solid;
   border-bottom: 30px transparent solid;
-  border-left: 30px #fff solid;
+  border-left: 30px rgba(255,255,255,0.9) solid;
   position:absolute;
   top:0;
   left:0;
@@ -79,14 +82,14 @@ nav a {
 
 .item:hover:after {
   z-index:-1;
-  border-left: 500px solid #fff;
+  border-left: 500px solid rgba(255,255,255,0.5);
   border-bottom:280px solid transparent;
   overflow:hidden;
-  background-color:#007766;
+  /*background-color:rgba(128,128,128,0.6);*/
 }
 
 .item:hover {
-  color:#007766;
+  /*color:#007766;*/
   overflow:hidden;
   margin-bottom: 10px;
   cursor:pointer;
