@@ -80,3 +80,47 @@ App.Router = Backbone.Router.extend({
 App.router = new App.Router;
 
 Backbone.history.start();
+
+
+$(function() {
+
+  $('main').find('div.info', function () {
+    $(this).hide()
+  })
+
+  // $('main').on('hover', 'div.info', function () {
+  //   $(this).html()
+
+  // })
+
+
+
+
+
+}) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

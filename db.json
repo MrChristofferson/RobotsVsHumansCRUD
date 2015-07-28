@@ -13,10 +13,16 @@
       "id": 2
     },
     {
-      "name": "Tim",
-      "hobby": "Likes Naked",
-      "img": "http://robohash.org/14ed1da35a7.png",
-      "id": 3
+      "name": "My dog",
+      "hobby": "Barking",
+      "img": "http://robohash.org/14ed2a30900.png",
+      "id": 4
+    },
+    {
+      "name": "Robot 1",
+      "hobby": "Killing pplz",
+      "img": "http://robohash.org/14ed2a3f835.png",
+      "id": 5
     }
   ],
   "products": [
