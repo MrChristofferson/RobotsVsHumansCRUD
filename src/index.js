@@ -84,19 +84,16 @@ Backbone.history.start();
 
 $(function() {
 
-  $('body').on('hover', 'div.item', function (){
-    $(this).children('div.info').hide()
-  })
+  // $('main').on('mouseenter', 'div.item', function () {
+  //   $(this).children('div.info').removeClass('hidden')
+  // })
 
-  $('main').on('hover', 'div.item', function () {
-    $(this).children('div.info').show()
-  })
+  // $('main').on('mouseout', 'div.item', function () {
+  //   $(this).children('div.info').addClass('hidden')
+  // })
 
 
 }) 
-
-
-
 
 
 

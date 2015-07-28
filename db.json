@@ -1,16 +1,16 @@
 {
   "users": [
     {
-      "name": "Chris Pryor",
-      "hobby": "Being a thug",
-      "img": "http://robohash.org/14ed1267446.png",
-      "id": 1
-    },
-    {
       "name": "My dog",
       "hobby": "Barking",
       "img": "http://robohash.org/14ed2a30900.png",
       "id": 4
+    },
+    {
+      "name": "Chris Pryor",
+      "hobby": "Bein a thug",
+      "img": "http://robohash.org/14ed6ef8e29.png",
+      "id": 5
     }
   ],
   "products": [

@@ -65,7 +65,7 @@ body {
 }
 
 .item:hover {
-  color:#007766;
+  /*color:#007766;*/
   overflow:hidden;
   margin-bottom: 10px;
   cursor:pointer;
@@ -91,4 +91,12 @@ body {
 .info {
   position: absolute;
   font-size: 25px;
+}
+
+.item .info {
+  display: none;
+}
+
+.item:hover .info {
+  display: block;
 }
