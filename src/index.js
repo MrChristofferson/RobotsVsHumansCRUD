@@ -88,14 +88,6 @@ $(function() {
     $(this).hide()
   })
 
-  // $('main').on('hover', 'div.info', function () {
-  //   $(this).html()
-
-  // })
-
-
-
-
 
 }) 
 

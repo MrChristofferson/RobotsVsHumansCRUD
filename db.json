@@ -11,12 +11,6 @@
       "hobby": "Barking",
       "img": "http://robohash.org/14ed2a30900.png",
       "id": 4
-    },
-    {
-      "name": "Robot 1",
-      "hobby": "Killing pplz",
-      "img": "http://robohash.org/14ed2a3f835.png",
-      "id": 5
     }
   ],
   "products": [

@@ -9,21 +9,17 @@ body {
   overflow:hidden; 
 }
 
-img {
-  border-bottom: 5px solid rgba(255,255,255, 0.3);
-  border-radius: 20
-}
-
-.hobby, .name, .anchors {
+.hobby, .name, .anchors {z
     font-size: 20pt;
 }
 
 .container a {
     text-decoration: none;
-    color: gray
+    color: gray;
 }
 
 .item {
+  border-bottom: 5px solid rgba(255,255,255, 0.3);
   position: relative;
   color: #fff;
   background-color: transparent;
@@ -65,11 +61,11 @@ img {
   border-left: 500px solid rgba(255,255,255,0.5);
   border-bottom:280px solid transparent;
   overflow:hidden;
-  /*background-color:rgba(128,128,128,0.6);*/
+  background-color:rgba(128,128,128,0.6);
 }
 
 .item:hover {
-  /*color:#007766;*/
+  color:#007766;
   overflow:hidden;
   margin-bottom: 10px;
   cursor:pointer;
