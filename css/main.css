@@ -9,6 +9,10 @@ body {
   overflow:hidden; 
 }
 
+.hidden {
+  display: none;
+}
+
 .hobby, .name, .anchors {z
     font-size: 20pt;
 }
