@@ -9,6 +9,26 @@ body {
   overflow:hidden; 
 }
 
+
+nav {
+    background-color: black;
+    /*overflow: hidden;*/
+    height: 80px;
+    display: inline-block;
+
+}
+
+nav a {
+    font-size: 2em;
+    background-color: green;
+    display: block;
+    float: left;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    
+}
+
 .hobby, .name, .anchors {
     font-size: 20pt;
 }
