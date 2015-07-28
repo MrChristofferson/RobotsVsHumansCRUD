@@ -87,3 +87,8 @@ body {
   transition: 0.75s all ease;
 }
 
+
+.info {
+  position: absolute;
+  font-size: 25px;
+}

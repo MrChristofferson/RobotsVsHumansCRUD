@@ -84,8 +84,12 @@ Backbone.history.start();
 
 $(function() {
 
-  $('main').find('div.info', function () {
-    $(this).hide()
+  $('body').on('hover', 'div.item', function (){
+    $(this).children('div.info').hide()
+  })
+
+  $('main').on('hover', 'div.item', function () {
+    $(this).children('div.info').show()
   })
 
 
