@@ -1,25 +1,56 @@
+
+html {
+   box-sizing: border-box;
+   color: #444;
+   font-size: 12pt;
+   font-family: 'Oswald', sans-serif;
+   font-weight: 300;
+}
+
+*, *::before, *::after {
+   box-sizing: inherit;
+   color: inherit;
+   font: inherit;
+}
+
 body {
-  font-family: "Helvetica" sans-serif;
-  font-weight: 100;
-  font-size:8px;
-
-
-  background:url('http://orig11.deviantart.net/7511/f/2014/125/d/7/post_apocalyptic_vilnius_by_latusma-d7h8ctr.jpg') no-repeat rgba(0,0,0,0.8);
-  background-size: cover;
-  overflow:hidden; 
+ background: url("../images/bgc2.jpg") no-repeat rgba(0,0,0,0.8);
+ background-size: cover;
+}
+.main-header {
+ position: relative;
 }
 
-.hidden {
-  display: none;
+.header-logo {
+ position: absolute;
+ left: 20px;
+ top: 0;
+ display: inline-block;
+ border: 5px solid black;
+ height: 110px;
+ width: 100px;
 }
 
-.hobby, .name, .anchors {z
+.main-header > nav {
+ background-color: black;
+ margin-left: 100px;
+}
+.main-nav a {
+ display: inline-block;
+ padding: 15px 30px;
+ text-decoration: none;
+ color: white;
+ font-size: 1.2em;
+ text-transform: uppercase;
+}
+
+.main-nav a:hover {
+ border: 5px solid #b88703;
+ color: #b88703;
+}
+
+.hobby, .name, .anchors {
     font-size: 20pt;
-}
-
-.container a {
-    text-decoration: none;
-    color: gray;
 }
 
 .item {
@@ -103,4 +134,8 @@ body {
 
 .item:hover .info {
   display: block;
+}
+
+.container {
+  margin: 0px 98px;
 }
