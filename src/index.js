@@ -53,6 +53,7 @@ App.Router = Backbone.Router.extend({
 
   addProduct: function(id) {
     App.Views.ProductForm.render(id);
+    console.log('ladjslfkdjslf')
   },
 
   deleteUser: function(id) {

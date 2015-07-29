@@ -1,20 +1,17 @@
 <div class="container">
-  <table border="1">
-    <tbody>
-
-    {{#each this}}
-    <div data-id="{{id}}" class="item hidden">
-      <div><img src="{{img}}" alt="" width=300 height=300></div>
+  {{#each this}}
+  <div data-id="{{id}}" class="item hidden">
+    <div class="info">
       <div class="name">{{name}}</div>
       <div class="hobby">{{hobby}}</div>
+      <div class="country">{{country}}</div>
       <div class="anchors">
         <a href="/#/products/{{id}}/edit">Edit</a> |
         <a href="/#/products/{{id}}/delete">Delete</a>
       </div>
     </div>
-    {{/each}}
-
-    </tbody>
-  </table>
+    <img src="{{img}}" alt="" width=300 height=300>
+  </div>
+  {{/each}}
 </div>
 

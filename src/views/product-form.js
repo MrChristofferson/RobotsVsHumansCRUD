@@ -45,6 +45,7 @@ var ProductFormView = Backbone.View.extend({
     // Collect Form Data
     var formData = {
       name: $('form.product input[name="name"]').val(),
+      country: $('form.product input[name="country"]').val(),
       hobby: $('form.product input[name="hobby"]').val()
     };
 
@@ -52,9 +53,9 @@ var ProductFormView = Backbone.View.extend({
     if (!this.editMode) {
 
       // Only set the image on add mode
-      formData.img = 'http://robohash.org/'+ Date.now().toString(16) + '.png'
+      formData.img = 'http://flathash.com/'+ Date.now().toString(16)
 
-      App.Collections.products.create(formData, {
+      App.Collections.product.create(formData, {
         success: function (product) {
           App.router.navigate('/', { trigger: true });
         }
