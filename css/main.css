@@ -1,7 +1,7 @@
 
 html {
    box-sizing: border-box;
-   color: #444;
+   color: white;
    font-size: 12pt;
    font-family: 'Oswald', sans-serif;
    font-weight: 300;
@@ -13,40 +13,110 @@ html {
    font: inherit;
 }
 
-body {
- background: url("../images/bgc2.jpg") no-repeat rgba(0,0,0,0.8);
- background-size: cover;
+.countryField, .nameField, .hobbyField {
+  display: flex;
 }
+
+form input {
+  background-color: rgba(0,0,0,1);
+  flex: 1;
+}
+
+span {
+  display: inline-block;
+  width: 110px;
+  margin-left: 30px;
+}
+
+body {
+ background: url("../images/bgc1.jpg") no-repeat rgba(0,0,0,0.8);
+ background-size: cover;
+ margin: 0;
+}
+
 .main-header {
  position: relative;
 }
 
+form {
+  background-color: rgba(0,0,0,0.5);
+  border: 2px solid black;
+  width: 500px;
+  height: 375px;
+  margin: 150px auto;
+  padding-top: 45px;
+  font-size: 20pt;
+}
+
+form > button {
+  width: 450px;
+  background: linear-gradient(135deg, rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%);
+  margin-left: 25px;
+}
+
+form > * + * {
+  margin-top: 30px;
+}
+
+form > div > input {
+  width: 320px;
+  height: 50px;
+  margin-right: 40px;
+}
+
+.header-container {
+  background-color: black;
+}
+
+.header-logo > img {
+  width: 200px;
+  height: 150px;
+  border: 15px solid black;
+  border-radius: 15px;
+  background-color: rgba(255,0,0,0.5);
+}
+
 .header-logo {
  position: absolute;
- left: 20px;
+ left: 70px;
  top: 0;
  display: inline-block;
- border: 5px solid black;
- height: 110px;
- width: 100px;
+ height: 150px;
+ width: 150px;
+ color: white;
+}
+
+.header-logo > p {
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+  position: relative;
+}
+
+.robot-p {
+  color:red
+}
+
+.humans-p {
+  color: blue;
 }
 
 .main-header > nav {
  background-color: black;
- margin-left: 100px;
+ margin-left: 300px;
 }
+
 .main-nav a {
  display: inline-block;
- padding: 15px 30px;
+ padding: 30px 50px;
  text-decoration: none;
  color: white;
- font-size: 1.2em;
+ font-size: 1.6em;
  text-transform: uppercase;
 }
 
 .main-nav a:hover {
- border: 5px solid #b88703;
- color: #b88703;
+ color: #5B557D;
 }
 
 .hobby, .name, .anchors {
@@ -58,7 +128,7 @@ body {
   position: relative;
   color: #fff;
   background-color: transparent;
-  width:24%;
+  width:32%;
   display:inline-block;
   * display:inline;
   margin: 0px 3px 10px 3px;
@@ -96,11 +166,11 @@ body {
   border-left: 500px solid rgba(255,255,255,0.5);
   border-bottom:280px solid transparent;
   overflow:hidden;
-  background-color:rgba(128,128,128,0.6);
+  background-color:rgba(255, 0, 0, 0.6);
 }
 
 .item:hover {
-  /*color:#007766;*/
+  color:#007766;
   overflow:hidden;
   margin-bottom: 10px;
   cursor:pointer;
@@ -126,6 +196,7 @@ body {
 .info {
   position: absolute;
   font-size: 25px;
+  color: white;
 }
 
 .item .info {
@@ -137,5 +208,5 @@ body {
 }
 
 .container {
-  margin: 0px 98px;
+  margin: 0px 267px;
 }
