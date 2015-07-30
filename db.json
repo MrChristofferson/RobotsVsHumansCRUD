@@ -1,12 +1,6 @@
 {
   "users": [
     {
-      "name": "My dog",
-      "hobby": "Barking",
-      "img": "http://robohash.org/14ed2a30900.png",
-      "id": 4
-    },
-    {
       "name": "Chris Pryor",
       "hobby": "Bein a thug",
       "img": "http://robohash.org/14ed6ef8e29.png",
@@ -40,25 +34,17 @@
       "id": 5
     },
     {
-      "name": "homie",
-      "country": "USSAA",
-      "hobby": "bein a homie",
-      "img": "http://flathash.com/14edbaa34d4",
-      "id": 6
-    },
-    {
-      "name": "",
-      "country": "",
-      "hobby": "",
-      "img": "http://flathash.com/14edbc2235d",
-      "id": 7
-    },
-    {
       "name": "",
       "country": "",
       "hobby": "",
       "img": "http://flathash.com/14edbcc6dbc",
       "id": 8
+    },
+    {
+      "name": "If this doesn't work",
+      "hobby": "it's your fault",
+      "img": "http://flathash.com/14edc1c7738",
+      "id": 9
     }
   ]
 }
